@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+body {
+background:linear-gradient(120deg,#000000 10%,#000000 25%,#000000 65%);
+color:#ffffff;
+font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+height:100%;
+width:90%;
+background:#fff;
+margin-left:auto;
+margin-right:auto;
+border-radius:10px; 
+background:#000000;
+}
+ 
+.main {
+height: 97.4vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+ 
+.format {
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+ 
+.track-art {
+height: 200px;
+width: 200px;
+/*background-image: URL("https://source.unsplash.com/Qrspubmx6kE/640x360");*/
+background-size: cover;
+background-position: center;
+border-radius: 30px;
+margin-bottom:20px;
+margin-top:0%;
+border:4px solid #152238;
+}
+ 
+.track-name {
+font-size:2rem;
+padding-bottom:10px;
+}
+ 
+.track-artist {
+font-size: 1.2rem;
+padding-top:5px;
+}
+ 
+.buttons {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+ 
+.playpause-track, .prev-track, .next-track {
+padding: 20px;
+padding-bottom:0px;
+opacity: 0.8;
+transition: opacity .2s;
+}
+ 
+.playpause-track:hover,.prev-track:hover,.next-track:hover {
+opacity: 1.0;
+}
+ 
+.slider_container {
+width: 95%;
+max-width: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+ 
+.seek_slider, .volume_slider {
+-webkit-appearance: none;
+appearance: none;
+height: 7.5px;
+background:#ffffff;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+border-radius:7px;
+}
+ 
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+width: 15px;
+height: 15px;
+background:#ffffff;
+cursor: pointer;
+border-radius: 50%;
+}
+ 
+.seek_slider:hover,.volume_slider:hover {
+opacity: 1.0;
+}
+ 
+.seek_slider {
+width: 100%;
+}
+ 
+.volume_slider {
+width: 75%;
+}
+ 
+.current-time,.total-duration {
+padding: 15px;
+}
+ 
+i.fa-volume-down,i.fa-volume-up {
+padding: 15px;
+}
+
+.icon {
+padding:20px;
+}
+
+span {
+color:#ffffff;
+}
+
+.tools {
+padding:10px;
+}
+
+#clock {
+padding:20px;
+font-size:20px;
+}
+
+#icon5 {
+color:#23395d;
+}
+
+#icon4 {
+color:#ffffff;
+}
+
+#icon6 {
+color:#ffffff;
+}
+
+#a {
+font-size:20px;
+position:absolute;
+top:-5%;
+left:2%;
+animation:fall1 5s linear infinite;
+animation-delay:0s;
+color:#152238;
+}
+
+#b {
+font-size:20px;
+position:absolute;
+top:-5%;
+left:6%;
+animation:fall2 5s linear infinite;
+animation-delay:1s;
+color:#152238;
+}
+
+#c {
+font-size:20px;
+position:absolute;
+top:-5%;
+left:11%;
+animation:fall3 5s linear infinite;
+animation-delay:0.5s;
+color:#ff2727;
+}
+
+#d {
+font-size:20px;
+position:absolute;
+top:-5%;
+left:17%;
+animation:fall4 5s linear infinite;
+animation-delay:1.7s;
+color:#152238;
+}
+
+#e {
+font-size:20px;
+position:absolute;
+top:-5%;
+left:25%;
+animation:fall5 5s linear infinite;
+animation-delay:0s;
+color:#ff2727;
+}
+
+#f {
+font-size:20px;
+position:absolute;
+top:-5%;
+left:35%;
+animation:fall6 5s linear infinite;
+animation-delay:1s;
+color:#152238;
+}
+
+#g {
+font-size:20px;
+position:absolute;
+top:-5%;
+left:45%;
+animation:fall7 5s linear infinite;
+animation-delay:1.5s;
+color:#ff2727;
+}
+
+#h {
+font-size:20px;
+position:absolute;
+top:-5%;
+left:55%;
+animation:fall8 5s linear infinite;
+animation-delay:0.5s;
+color:#152238;
+}
+
+#i {
+font-size:20px;
+position:absolute;
+top:-5%;
+left:65%;
+animation:fall9 5s linear infinite;
+animation-delay:0s;
+color:#ff2727;
+}
+
+#j {
+font-size:20px;
+position:absolute;
+top:-5%;
+left:75%;
+animation:fall10 5s linear infinite;
+animation-delay:1s;
+color:#152238;
+}
+
+#k {
+font-size:20px;
+position:absolute;
+top:-5%;
+left:85%;
+animation:fall11 5s linear infinite;
+animation-delay:1.7s;
+color:152238;
+}
+
+#l {
+font-size:20px;
+position:absolute;
+top:-5%;
+left:95%;
+animation:fall12 5s linear infinite;
+animation-delay:0.5s;
+color:#ff2727;
+}
+
+@keyframes fall1 {
+
+0%   { top:1%;  left:2%;  }
+25%  { top:15%; left:5%;  }
+50%  { top:30%; left:3%;  }
+75%  { top:45%; left:6%;  }
+100% { top:60%; left:1%;  }
+}
+
+@keyframes fall2 {
+
+0%   { top:1%;  left:10%;  }
+25%  { top:15%; left:14%;  }
+50%  { top:30%; left:12%;  }
+75%  { top:45%; left:17%;  }
+100% { top:60%; left:10%;  }
+}
+
+@keyframes fall3 {
+
+0%   { top:1%;  left:20%;  }
+25%  { top:15%; left:24%;  }
+50%  { top:30%; left:18%;  }
+75%  { top:45%; left:21%;  }
+100% { top:60%; left:13%;  }
+}
+
+@keyframes fall4 {
+
+0%   { top:1%;  left:28%;  }
+25%  { top:15%; left:22%;  }
+50%  { top:30%; left:25%;  }
+75%  { top:45%; left:20%;  }
+100% { top:60%; left:17%;  }
+}
+
+@keyframes fall5 {
+
+0%   { top:1%;  left:38%;  }
+25%  { top:15%; left:32%;  }
+50%  { top:30%; left:34%;  }
+75%  { top:45%; left:30%;  }
+100% { top:60%; left:37%;  }
+}
+
+@keyframes fall6 {
+
+0%   { top:1%;  left:50%;  }
+25%  { top:15%; left:42%;  }
+50%  { top:30%; left:47%;  }
+75%  { top:45%; left:40%;  }
+100% { top:60%; left:49%;  }
+}
+
+@keyframes fall7 {
+
+0%   { top:1%;  left:60%;  }
+25%  { top:15%; left:55%;  }
+50%  { top:30%; left:49%;  }
+75%  { top:45%; left:56%;  }
+100% { top:60%; left:51%;  }
+}
+
+@keyframes fall8 {
+
+0%   { top:1%;  left:67%;  }
+25%  { top:15%; left:61%;  }
+50%  { top:30%; left:56%;  }
+75%  { top:45%; left:65%;  }
+100% { top:60%; left:71%;  }
+}
+
+@keyframes fall9 {
+
+0%   { top:1%;  left:75%;  }
+25%  { top:15%; left:68%;  }
+50%  { top:30%; left:65%;  }
+75%  { top:45%; left:56%;  }
+100% { top:60%; left:55%;  }
+}
+
+@keyframes fall10 {
+
+0%   { top:1%;  left:85%;  }
+25%  { top:15%; left:75%;  }
+50%  { top:30%; left:63%;  }
+75%  { top:45%; left:71%;  }
+100% { top:60%; left:80%;  }
+}
+
+@keyframes fall11 {
+
+0%   { top:1%;  left:93%;  }
+25%  { top:15%; left:80%;  }
+50%  { top:30%; left:76%;  }
+75%  { top:45%; left:94%;  }
+100% { top:60%; left:82%;  }
+}
+
+@keyframes fall12 {
+
+0%   { top:1%;  left:99%;  }
+25%  { top:15%; left:87%;  }
+50%  { top:30%; left:95%;  }
+75%  { top:45%; left:80%;  }
+100% { top:60%; left:87%;  }
+}
+
+
